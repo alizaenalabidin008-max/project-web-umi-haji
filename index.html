@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keluarga Besar Umi Haji</title>
+  <link rel="icon" href="https://i.pinimg.com/736x/3a/20/a6/3a20a6b23a34bb232e1ba8adb5b1f183.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #005a9f;
+      --bg-white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url(https://i.pinimg.com/1200x/b4/b8/46/b4b84686c484a40921190797d1d04d3d.jpg) no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #193142;
+    }
+
+    header h5 {
+      margin: 5px 0 0;
+      font-weight: 400;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    #pendahuluan {
+      background: var(--bg-white);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px var(--shadow);
+      margin-bottom: 40px;
+    }
+
+    #pendahuluan h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .download {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .downloadV2 {
+      background: var(--bg-white);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .downloadV2:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px var(--shadow);
+    }
+
+    .downloadV2 h2 {
+      margin-bottom: 15px;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .downloadV2 a button {
+      width: 100%;
+      max-width: 220px;
+      padding: 10px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .downloadV2 a button:hover {
+      background: #00457d;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .downloadV2 h2 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Halo, Selamat Datang</h1>
+    <h5>Di Website <br>Keluarga Besar Umi Haji Usniah</h5>
+  </header>
+
+  <main>
+    <section>
+      <div id="pendahuluan">
+        <h2>PENDAHULUAN</h2>
+        <p>Website ini adalah website yang diperuntukan untuk saudara-saudara Umi HJ.Usniah dan keturunan-keturunannya. <br>Website ini berisi silsilah untuk menghadiahi mayit (insya Allah suatu saat akan menambah fitur),saat ini hanya ada sedikit fitur yaitu hanya foto kertas silsilah dan versi excel silsilah itu. Dengan demikian, website ini diharapkan dapat menjadi sarana untuk menjaga silaturahmi, mengenali lebih jauh jalinan kekeluargaan, serta menjadi pengingat bagi kita semua akan pentingnya menghargai akar dan warisan leluhur.</p>
+      </div>
+    </section>
+
+          <section class="download">
+        <div class="downloadV2">
+          <h2>DOWNLOAD VERSI FOTO</h2>
+          <!-- Ganti link di href ke link file kamu -->
+          <a href="https://drive.google.com/uc?export=download&id=15eKv7wClXYYfELq4UYSUAgFiZNJequU_" download>
+            <button>⬇️ Klik</button>
+          </a>
+        </div>
+
+        <div class="downloadV2">
+          <h2>DOWNLOAD VERSI EXCEL</h2>
+          <a href="https://docs.google.com/spreadsheets/d/1oslGFncbi7G1YCm83bZQrwpekt85fmYS/export?format=xlsx" download>
+            <button>⬇️ Klik</button>
+          </a>
+        </div>
+      </section>
+
+  </main>
+</body>
+</html>
